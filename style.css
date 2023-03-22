@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+}
+
+#wing1,
+#wing2 {
+  animation: wing1 0.2s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+  animation-direction: alternate;
+}
+@keyframes wing1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#zoom {
+  animation: wing1 0.15s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes zoom {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(30deg);
+  }
+  30% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(60deg);
+  }
+  50% {
+    transform: rotate(40deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  70% {
+    transform: rotate(90deg);
+  }
+  80% {
+    transform: rotate(40deg);
+  }
+  90% {
+    transform: rotate(90deg);
+  }
+}
+#drone {
+  animation: drone 50s linear infinite;
+  animation-direction: alternate;
+  transition: all 0.2s ease-in-out;
+}
+@keyframes drone {
+  0% {
+    transform: translate(0%, 85vh);
+  }
+  10% {
+    transform: translate(70%, 15vh);
+  }
+  20% {
+    transform: translate(100%, 10vh);
+  }
+  30% {
+    transform: translate(50%, 0vh);
+  }
+  40% {
+    transform: translate(20%, 10vh);
+  }
+  50% {
+    transform: translate(12%, 90vh);
+  }
+  60% {
+    transform: translate(30%, 0vh);
+  }
+  80% {
+    transform: translate(10%, 80vh);
+  }
+  90% {
+    transform: translate(0%, 0vh);
+  }
+  100% {
+    transform: translate(19%, 20vh);
+  }
+}
